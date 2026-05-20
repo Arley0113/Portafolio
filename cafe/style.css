@@ -1,0 +1,202 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main{
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    padding: 20px;
+    flex-grow: 1;
+}
+@media (max-width: 1200px) {
+  main{
+    flex-direction: column;
+  }
+}
+header{
+    background-image: url(./img/banner.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height:750px ;
+    display: flex;
+    flex-direction: column;
+}
+.titulo{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+    margin-top: 60px;
+}
+h1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-right: 250px;
+}
+h1 a{
+    color: white;
+    text-decoration: none;
+    font-size: 60px;
+}
+span{
+    font-weight: 100;
+}
+nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    margin-right: 140px;
+}
+@media (max-width: 1000px) {
+  nav ul {
+    flex-direction: column;
+  }
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: pink;
+}
+.xx{
+    margin-top: 7%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.xx h2{
+    text-align: center;
+    color: white;
+    font-size: 230%;
+    margin: 0%;
+}
+.xx p{
+    text-align: center;
+    color: white;
+    font-size: 115%;
+}
+main{
+    margin: 40px;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 3rem;
+    width: 100%;
+}
+section h2{
+    font-size: 40px;
+    margin-left: 30px;
+}
+.yy{
+    font-size: 25px;
+}
+.yy img{
+    display: flex;
+    width: 92%;
+    height: 600px;
+}
+@media (max-width: 1200px) {
+  .yy img{
+    width: 100%;
+    height: 50%;
+  }
+}
+.toto {
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    text-align: justify;
+    width: 94%;
+}
+.botton{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border-style: none;
+    width: 200px;
+    height: 60px;
+    text-align: center;
+    align-items: center;
+}
+.botton:hover{
+    border-style: solid;
+    border-color: #4b3627;
+    border-width: 4px;
+    cursor: pointer;
+}
+aside{
+    flex: 0 0 25%;
+    padding: 15px;
+}
+aside h2{
+    font-size: 34px;
+}
+aside div{
+font-size: 25px;
+}
+aside span{
+    font-weight: bold;
+}
+aside button{
+    width: 100%;
+    font-weight: bold;
+    font-size: 20px;
+    height: 80px;
+    background-color: #462e13;
+    color:white ;
+    border-style: none;
+}
+aside button:hover{
+    border-style: solid;
+    border-width: 4px;
+    border-color: black;
+    cursor: pointer;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    flex-direction: column;
+}
+footer p{
+    text-align: center;
+    margin-bottom: 40px;
+}
+footer h2 a{
+    text-decoration: none;
+    color: white;
+}
+.nn{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+}
+.nmn {
+    display: flex;
+    justify-content:end;
+}
+footer h2{
+    font-size: 60px;
+    margin-left: 20%;  
+}

@@ -1,0 +1,251 @@
+
+body{
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: rgb(85, 66, 255);
+    height: 120px;
+    
+}
+nav{
+    text-align: center;
+    padding-top: 25px;
+    
+
+}
+nav ul{
+list-style: none;
+    padding: 0;
+    text-align: end;
+    color: white;
+    margin-right: 50px;
+}
+nav ul li{
+    display: inline-block;
+    margin-inline-start: 40px;
+    list-style: none;
+    border-radius: 150px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+h2{
+    text-align: center;
+}
+
+.principal {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    align-items: start;
+}
+
+
+figure img {
+    width: 100%;
+}
+
+article {
+    text-align: center;
+    color: gray;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+button {
+    color: white;
+    background-color: rgb(104, 145, 231);
+    border: none;
+    width: 280px;
+    height: 35px;
+    border-radius: 8px;
+    margin-top: 10px;
+    cursor: pointer;
+    
+}
+
+@media (min-width: 850px) {
+    .principal {
+        
+        flex-direction: row; 
+        align-items: flex-start;
+        width: 100%;
+        max-width: 900px;
+        
+    }
+    article {
+        margin-left: 20px;
+        text-align: center;
+        
+    }
+    figure{
+        width: 100%;
+    }
+
+    button {
+        width: 200px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .principal {
+
+        width: 100%;
+        max-width: 1400px;
+    }
+
+    button {
+        width: 250px;
+        height: 40px;
+    }
+
+    article {
+        font-size: 1.1rem;
+    }
+}
+
+
+
+
+.carro {
+    margin-left: 52px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    align-items: flex-start; 
+    background-color: rgb(154, 173, 235);
+    padding: 15px; 
+    width: 250px;
+    max-width: 450px;
+    gap: 15px;
+}
+
+
+.carro h4 {
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+
+.carrito {
+    display: flex;
+    align-items: center; 
+    width: 70%;
+    height: 15%;
+    justify-content: space-between; 
+    padding-bottom: 10px;
+    margin-left: 10px;
+}
+
+.carrito figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    margin: 0;
+}
+
+.carrito img {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90px; 
+    height: auto;
+    border-radius: 15px;
+}
+
+
+.cant {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+    text-align: center;
+    width: 80px; 
+    border: 1px solid black;
+    border-radius: 15px;
+    height: 30px; 
+}
+
+.cant div {
+    cursor: pointer;
+    font-weight: bold;
+    user-select: none;
+    padding: 0 5px;
+}
+
+
+.carrito p {
+    font-weight: bold;
+    width: 70px; 
+    text-align: right;
+    margin: 0; 
+}
+
+.textos{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    align-items: start;
+    
+}
+
+.todo{
+    color: white;
+    background-color: rgb(25, 92, 238);
+    border: none;
+    width: 250px;
+    height: 35px;
+    border-radius: 8px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+form{
+    background-color: #fff;
+    width: 20%;
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 8 px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0,1);
+    flex-grow: 1;}
+fieldset{
+    border: 2 px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+legend{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #04befc;
+    padding: 0 10 px;
+}
+
+fieldset label{
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #04befc;
+
+}
+input[type="text"],
+input[type="date"],
+input[type="password"],
+input[type="email"],
+select{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid#ccc;
+    font-size: 1em;
+}
